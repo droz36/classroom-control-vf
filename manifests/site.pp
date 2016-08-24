@@ -43,5 +43,14 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello Droz, my name is ${::hostname}": }
-  include examples::fundamentals
+  file { '/etc/motd':
+    ensure  => 'file',
+    content => '{md5}09f7e02f1290be211da707a266f153b3',
+    ctime   => '2016-08-24 16:20:25 +0000',
+    group   => '0',
+    mode    => '0644',
+    mtime   => '2016-08-24 16:20:25 +0000',
+    owner   => '0',
+    type    => 'file',
+  }
 }
