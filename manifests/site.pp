@@ -59,5 +59,5 @@ node default {
 }
 
 node droz36.puppetlabs.vm {
-  notify {"Test Notification":}
+  include skeleton
 }
