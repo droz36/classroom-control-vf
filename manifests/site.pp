@@ -55,3 +55,7 @@ node default {
     creates => '/etc/motd',
   }
 }
+
+node droz36.puppetlabs.vm {
+  notify {"Test Notification":}
+}
