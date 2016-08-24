@@ -45,10 +45,9 @@ node default {
   notify { "Hello Droz, my name is ${::hostname}": }
   file { '/etc/motd':
     ensure  => 'file',
-    content => '{md5}09f7e02f1290be211da707a266f153b3',
+    content => 'Hello, Pupppet is great!',
     group   => 'root',
     mode    => '0644',
     owner   => 'root',
-    type    => 'file',
   }
 }
