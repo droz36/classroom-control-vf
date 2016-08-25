@@ -20,13 +20,6 @@
 File { backup => false }
 
 # Randomize enforcement order to help understand relationships
-ini_setting { 'random ordering':
-  ensure  => present,
-  path    => "${settings::confdir}/puppet.conf",
-  section => 'agent',
-  setting => 'ordering',
-  value   => 'title-hash',
-}
 
 # DEFAULT NODE
 # Node definitions in this file are merged with node data from the console. See
