@@ -33,6 +33,9 @@ File { backup => false }
 
 node default {
 
+ntify { hiera('message'):}
+
+
 include skeleton
 
   # This is where you can declare classes for all nodes.
