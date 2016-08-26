@@ -33,16 +33,16 @@ File { backup => false }
 
 node default {
 
-ntify { hiera('message'):}
+notify { hiera('message'):}
 
 
-include skeleton
+# include skeleton
 
   # This is where you can declare classes for all nodes.
   # Example:
   # class { 'my_class': }
-  notify { "Hello, my name is ${::hostname}": }
-  #file { '/etc/motd':
+  # notify { "Hello, my name is ${::hostname}": }
+  # file { '/etc/motd':
     # ensure => file,
     # owner => 'root',
     # group => 'root',
