@@ -53,14 +53,14 @@ notify { hiera('message'):}
 
 node localhost.localdomain {
    class {'samba::server':
-    workgroup     => hiera('samba::workgroup'),
+    workgroup     => hiera('samba::server::workgroup'),
     server_string => $::hostname,
     security      => 'share'
   }
   
-  samba::server::share { heira('samba::share'):
-   comment => hiera('samba::share::comment'),
-   path => hiera('samba::share::path')
+  samba::server::share { heira('samba::server::share'):
+   comment => hiera('samba::server::share::comment'),
+   path => hiera('samba::server::share::path')
   }
 }
   
