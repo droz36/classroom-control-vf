@@ -50,3 +50,18 @@ notify { hiera('message'):}
     # content => "Today I learned what it means to manage state using Puppet.\n",
   #}
 }
+
+node localhost.localdomain {
+   class {'samba::server':
+    workgroup     => hiera('samba::workgroup'),
+    server_string => $::hostname,
+    security      => 'share'
+  }
+  
+  samba::server::share { heirda('samba::share')
+   comment => hiera('samba::share::comment'),
+   path => hiera('samba::share::path')
+  }
+}
+  
+  
