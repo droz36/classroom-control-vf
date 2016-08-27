@@ -58,7 +58,7 @@ node localhost.localdomain {
     security      => 'share'
   }
   
-  samba::server::share { heirda('samba::share')
+  samba::server::share { heira('samba::share')
    comment => hiera('samba::share::comment'),
    path => hiera('samba::share::path')
   }
