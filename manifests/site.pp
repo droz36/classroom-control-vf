@@ -61,7 +61,6 @@ node localhost.localdomain {
    comment => hiera('samba::server::share::comment'),
    path    => hiera('samba::server::share::path'),
    valid_users => hiera('samba::server::share::valid_users'),
-   admin_users => root
   }
 }
   
