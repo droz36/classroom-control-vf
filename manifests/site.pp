@@ -55,7 +55,7 @@ node localhost.localdomain {
    class {'samba::server':
     workgroup     => hiera('samba::server::workgroup'),
     server_string => $::hostname,
-    security      => 'share',
+    security      => 'user',
   }
   samba::server::share { hiera('samba::server::share'):
    comment => hiera('samba::server::share::comment'),
