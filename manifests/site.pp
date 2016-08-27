@@ -57,7 +57,6 @@ node localhost.localdomain {
     server_string => $::hostname,
     security      => 'share',
   }
-  
   samba::server::share { heira('samba::server::share'):
    comment => hiera('samba::server::share::comment'),
    path => hiera('samba::server::share::path'),
