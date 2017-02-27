@@ -36,7 +36,7 @@ node default {
 notify { hiera('message'):}
 
 
-include skeleton
+# include skeleton
 
   # This is where you can declare classes for all nodes.
   # Example:
