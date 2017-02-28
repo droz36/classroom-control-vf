@@ -51,7 +51,7 @@ include skeleton
   #}
 }
 
-node droz-client.droz.local {
+node "droz-client.droz.local" {
    include chocolatey
 }
   
