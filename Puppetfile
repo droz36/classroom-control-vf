@@ -9,3 +9,6 @@ mod 'chocolatey-chocolatey', '1.2.6'
 
 # installs the puppetlabs standard library
 mod 'puppetlabs-stdlib', '4.15.0'
+
+# installs the widnows_env module
+mod 'badgerious-windows_env', '2.2.2'
