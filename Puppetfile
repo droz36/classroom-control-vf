@@ -6,3 +6,6 @@ mod 'vcsrepo',
   :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo'
 
 mod 'chocolatey-chocolatey', '1.2.6'
+
+# installs the puppetlabs standard library
+mod 'puppetlabs-stdlib', '4.15.0'
