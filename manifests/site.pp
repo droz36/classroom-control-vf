@@ -51,17 +51,8 @@ include skeleton
   #}
 }
 
-node localhost.localdomain {
-   class {'samba::server':
-    workgroup     => hiera('samba::server::workgroup'),
-    server_string => $::hostname,
-    security      => 'user',
-  }
-  samba::server::share { hiera('samba::server::share'):
-   comment => hiera('samba::server::share::comment'),
-   path    => hiera('samba::server::share::path'),
-   valid_users => hiera('samba::server::share::valid_users'),
-  }
+node droz-client.droz.local {
+   include chocolatey
 }
   
   
