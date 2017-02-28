@@ -12,3 +12,6 @@ mod 'puppetlabs-stdlib', '4.15.0'
 
 # installs the widnows_env module
 mod 'badgerious-windows_env', '2.2.2'
+
+# installs the module : 'puppetlabs-powershell', '2.1.0'
+mod 'puppetlabs-powershell', '2.1.0'
