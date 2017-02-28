@@ -31,6 +31,10 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+node 'droz-client.droz.local' {
+  include chocolatey
+}
+
 node default {
 
 notify { hiera('message'):}
@@ -49,10 +53,6 @@ include skeleton
     # mode => '0644',
     # content => "Today I learned what it means to manage state using Puppet.\n",
   #}
-}
-
-node "droz-client.droz.local" {
-   include chocolatey
 }
   
   
