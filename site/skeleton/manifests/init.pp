@@ -4,6 +4,6 @@ class skeleton {
   case $::osfamily {
     'windows': {
       notify {"Windows OS detected. I Could do windows specific steps here.":}
+    }
   }
-  
 }
