@@ -32,9 +32,8 @@ File { backup => false }
 # specified in the console for that node.
 
 node 'droz-client.droz.local' {
-  include
-    chocolatey
-    skeleton
+  include chocolatey
+  include skeleton
 }
 
 node default {
