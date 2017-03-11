@@ -54,5 +54,3 @@ include skeleton
     # content => "Today I learned what it means to manage state using Puppet.\n",
   #}
 }
-  
-  
